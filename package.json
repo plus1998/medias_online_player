@@ -10,7 +10,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint --fix --ext .js,.vue src"
+    "lint": "eslint --fix --ext .js,.vue src",
+    "docker:build": "yarn && yarn build && cd ./docker && docker build -t plus894860970/medias-view .",
+    "docker:remove": "docker rmi plus894860970/medias-view",
+    "docker:run": "docker run -p 80:80 -d medias-view",
+    "docker:tag": "docker tag plus894860970/medias-view:1.0.0 plus894860970/medias-view:1.0.0",
+    "docker:push": "docker push plus894860970/medias-view"
   },
   "dependencies": {
     "@ant-design/colors": "^4.0.5",

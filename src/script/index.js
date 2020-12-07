@@ -1,7 +1,7 @@
 import { reactive, ref } from 'vue';
 import pdfjsLib from 'pdfjs-dist';
 pdfjsLib.GlobalWorkerOptions.workerSrc =
-    '../../node_modules/pdfjs-dist/build/pdf.worker.js';
+    '/lib/pdf.worker.js';
 
 const loading = ref(false);
 const db = ref('');
