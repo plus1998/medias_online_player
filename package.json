@@ -1,0 +1,29 @@
+{
+  "name": "medias-view",
+  "version": "1.0.0",
+  "description": "plusl",
+  "main": "A pdf mp3 online player.",
+  "repository": "git@github.com:plusl894860970/medias_online_player.git",
+  "author": "plus <894860970@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint --fix --ext .js,.vue src"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^4.0.5",
+    "ant-design-vue": "^2.0.0-rc.2",
+    "axios": "^0.21.0",
+    "pdfjs-dist": "^2.5.207",
+    "vue": "^3.0.2"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.2",
+    "eslint": "^7.14.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "sass": "^1.29.0",
+    "vite": "^1.0.0-rc.13"
+  }
+}
